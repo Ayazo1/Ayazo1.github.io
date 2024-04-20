@@ -70,12 +70,15 @@ body {
     position: absolute;
     top: 22%;
     bottom: 37%;
-    left: 5%;
-    transform: translate(-50%);
+    padding: 1vh ;
+    left: 0%;
+    /* transform: translate(-50%); */
    }
    
    .about h1{
     position: relative; 
+    /* display: flex;
+    justify-content: center; */
     border-bottom: 8.5px solid white;
     bottom: 15px; 
    }
