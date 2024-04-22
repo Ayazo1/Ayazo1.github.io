@@ -64,7 +64,6 @@ body {
     overflow: hidden;
 }
 
-
 @media (width < 1000px){
    .about {
     position: absolute;
