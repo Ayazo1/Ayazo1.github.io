@@ -85,9 +85,6 @@ body {
     position: relative; 
     display: flex;
     justify-content: center;
-    left: 0%;
-    right: 0%;
-    bottom: 0px; 
     font-size: 75px;
    }
 
@@ -104,8 +101,6 @@ body {
     position: relative; 
     display: flex;
     justify-content: center;
-    left: 0%;
-    right: 0%;
     top: -5px;
    }
 }
