@@ -75,8 +75,8 @@ body {
     top: 22%;
     bottom: 37%;
     border: 0px ;
-    left: 5%;
-    right: 5%;
+    left: 0%;
+    right: 0%;
     transform: translate(-50%);
     text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8)
    }
@@ -85,23 +85,27 @@ body {
     position: relative; 
     display: flex;
     justify-content: center;
-    left: 5%;
-    right: 5%;
+    left: 0%;
+    right: 0%;
     bottom: 0px; 
+   }
+
+   .about i{
+    font-size: 35px;
    }
 
    .about li{    
     display: inline;
     padding: 5px;
-    font-size: 33px;
    }
 
    .about ul {
     position: relative; 
     display: flex;
     justify-content: center;
-    left: 5%;
-    right: 5%;
+    left: 0%;
+    right: 0%;
+
    }
 }
 
