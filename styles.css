@@ -90,10 +90,6 @@ body {
     bottom: 0px; 
    }
 
-   .underline {
-    position: relative;
-}
-
    .about li{    
     display: inline;
     padding: 5px;
