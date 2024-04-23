@@ -43,6 +43,10 @@
     transition: text-shadow 0.3s ease;
 }
 
+.about li {
+    display: inline;
+}
+
 .about i:hover {
         text-shadow: 0 0 15px rgba(255, 255, 255, 0.8)
 }
@@ -64,29 +68,44 @@ body {
     overflow: hidden;
 }
 
+
 @media (width < 1000px){
    .about {
     position: absolute;
     top: 22%;
     bottom: 37%;
     border: 0px ;
-    padding: 1px;
-    left: 0%;
+    left: 5%;
+    right: 5%;
     transform: translate(-50%);
+    text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8)
    }
    
    .about h1{
     position: relative; 
     display: flex;
     justify-content: center;
-    border-bottom: 8.5px solid white;
-    bottom: 15px; 
+    left: 5%;
+    right: 5%;
+    bottom: 0px; 
    }
 
-   .about i{
-    font-size: 33px;
+   .underline {
     position: relative;
+}
+
+   .about li{    
+    display: inline;
+    padding: 5px;
+    font-size: 33px;
+   }
+
+   .about ul {
+    position: relative; 
+    display: flex;
+    justify-content: center;
     left: 5%;
+    right: 5%;
    }
 }
 
