@@ -88,10 +88,11 @@ body {
     left: 0%;
     right: 0%;
     bottom: 0px; 
+    font-size: 75px;
    }
 
    .about i{
-    font-size: 35px;
+    font-size: 25px;
    }
 
    .about li{    
@@ -105,7 +106,7 @@ body {
     justify-content: center;
     left: 0%;
     right: 0%;
-
+    top: -5px;
    }
 }
 
