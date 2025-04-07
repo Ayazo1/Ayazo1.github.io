@@ -1,24 +1,57 @@
 * {
-    padding: 0;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.about {
-    display: inline;
-    position: absolute;
-    padding: 20px;
-    margin: 18vw 18vw 18vw 22vw;
-    color: white;
-    bottom: -25px;
-    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0);
+body {
+    min-height: 100vh; 
+    background-image: url(img/background.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 
-    opacity: 0; 
-    animation: slideIn 0.85s ease-in-out forwards; 
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.about {
+    text-align: center;
+    color: white;
+    opacity: 0; 
+    animation: slideIn 0.85s ease-in-out forwards; 
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.about li {
+    display: inline-block;
+}
+
+.about i {
+    font-size: 55px;
+    transition: text-shadow 0.3s ease;
+}
+
+.about i:hover {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.about a {
+    color: white;
+    cursor: pointer;
+}
+
+/* 動畫效果 */
 @keyframes slideIn {
     0% { 
         opacity: 0; 
@@ -30,83 +63,18 @@
     }
 }
 
-.about h1{
-    color: white;
-    font-size: 95px;
-}
-
-.about i {
-    margin-top: 1.5px;
-    margin-right: 1vw;
-    font-size: 40px;
-    padding-bottom: 1;
-    transition: text-shadow 0.3s ease;
-}
-
-.about li {
-    display: inline;
-}
-
-.about i:hover {
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.8)
-}
-
-.about a {
-    color: white;
-    cursor: pointer;
-}
-
-body {
-    height: 100%;
-    padding: 0;
-    display: block;
-    min-height: 100vh; 
-    background-image: url(img/background.png); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    overflow: hidden;
-}
-
-
+/* 手機版 */
 @media (width < 1000px){
-   .about {
-    position: absolute;
-    top: 22%;
-    bottom: 37%;
-    border: 0px ;
-    left: 0%;
-    right: 0%;
-    transform: translate(-50%);
-    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.37)
-   }
-   
-   .about h1{
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    left: 0%;
-    right: 0%;
-    bottom: 0px; 
-    font-size: 80px;
-   }
+    .about {
+        padding: 10px;
+    }
 
-   .about i{
-    font-size: 27px;
-   }
+    .about i {
+        font-size: 40px;
+    }
 
-   .about li{    
-    display: inline;
-    padding: 5px;
-   }
-
-   .about ul {
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    left: 1%;
-    right: 0%;
-    top: -5px;
-   }
+    .about ul {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
 }
-
